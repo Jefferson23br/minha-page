@@ -75,7 +75,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Active navigation link on scroll
-const sections = document.querySelectorAll('.section');
+const sections = document.querySelectorAll('.section, .hero');
 const navLinksArray = document.querySelectorAll('.nav-link');
 
 function updateActiveNavLink() {
@@ -154,22 +154,6 @@ const gridObserver = new IntersectionObserver(function(entries) {
 
 document.querySelectorAll('.portfolio-grid, .education-grid, .courses-grid, .contact-grid, .info-grid').forEach(grid => {
     gridObserver.observe(grid);
-});
-
-// ============================================
-// PARALLAX EFFECT
-// ============================================
-window.addEventListener('scroll', function() {
-    const scrolled = window.pageYOffset;
-    const hero = document.getElementById('hero');
-    
-    if (hero) {
-        const heroContent = hero.querySelector('.hero-content');
-        if (heroContent) {
-            heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
-            heroContent.style.opacity = 1 - (scrolled / 500);
-        }
-    }
 });
 
 // ============================================
@@ -404,7 +388,7 @@ window.addEventListener('scroll', throttledScroll);
 // ============================================
 // CONSOLE MESSAGE
 // ============================================
-console.log('%c👋 Olá! Bem-vindo ao currículo de Jefferson Lima!', 'color: #007bff; font-size: 20px; font-weight: bold;');
-console.log('%c💼 Desenvolvedor Full Stack | PHP | React | Node.js', 'color: #28a745; font-size: 14px;');
-console.log('%c🔗 GitHub: https://github.com/Jefferson23br', 'color: #6c63ff; font-size: 12px;');
+console.log('%c👋 Olá! Bem-vindo ao currículo de Jefferson Lima!', 'color: #2563eb; font-size: 20px; font-weight: bold;');
+console.log('%c💼 Desenvolvedor Full Stack | Analista Empresarial', 'color: #059669; font-size: 14px;');
+console.log('%c🔗 GitHub: https://github.com/Jefferson23br', 'color: #1e3a5f; font-size: 12px;');
 
