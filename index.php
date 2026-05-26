@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Currículo de Jefferson Lima - Desenvolvedor Full Stack">
+    <meta name="description" content="Currículo de Jefferson Lima - Desenvolvedor Full Stack, Analista Empresarial e consultor em GovTech/SaaS">
     <meta name="keywords" content="Jefferson Lima, Desenvolvedor, Full Stack, PHP, React, Node.js">
     <title>Jefferson Lima | Currículo Vitae</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/images/logo1 (1).png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="loader" class="loader">
@@ -30,10 +30,11 @@
                 <div class="bar"></div>
             </div>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about" class="nav-link">Informações Básicas</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mim</a></li>
+                <li><a href="#github-chart" class="nav-link">GitHub</a></li>
                 <li><a href="#experience" class="nav-link">Experiências</a></li>
+                <li><a href="#courses" class="nav-link">Certificados</a></li>
                 <li><a href="#education" class="nav-link">Formação</a></li>
-                <li><a href="#courses" class="nav-link">Cursos</a></li>
                 <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
                 <li><a href="#contact" class="nav-link">Contato</a></li>
             </ul>
@@ -44,14 +45,14 @@
         <div class="container">
             <div class="hero-content">
                 <div class="profile-image-wrapper">
-                    <img src="assets/images/GSTC1988.JPG" alt="Jefferson Lima" class="profile-pic">
-                    <div class="profile-border"></div>
+                    <img src="assets/images/Perfil.png" alt="Jefferson Lima" class="profile-pic">
                 </div>
                 <h1 class="hero-title">Jefferson Lima</h1>
-                <p class="tagline">"A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original." — Albert Einstein</p>
+                <p class="hero-subtitle">Desenvolvedor Full Stack · Analista Empresarial</p>
+                <p class="tagline">Direito, Contabilidade e Tecnologia aplicados à construção de sistemas em conformidade com regras de negócio rigorosas.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn-primary">Entre em Contato</a>
-                    <a href="#portfolio" class="btn-secondary">Ver Portfólio</a>
+                    <a href="https://github.com/Jefferson23br" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
                 </div>
             </div>
         </div>
@@ -62,18 +63,57 @@
     <section id="about" class="section fade-in">
         <div class="container">
             <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <p>Profissional dinâmico e versátil, com mentalidade analítica e estratégica, pronto para agregar valor em diversos setores. Tenho uma abordagem proativa para desafios, combinando minha capacidade de aprendizado contínuo com a aplicação prática de conhecimentos adquiridos por meio de estudos e experiências profissionais.</p>
-                <p>Minha proposta de valor está na minha habilidade de integrar soluções inovadoras, otimizando processos e potencializando resultados. Estou sempre aberto a novos conhecimentos, mantendo-me atualizado com as melhores práticas do mercado e adaptando-me rapidamente às mudanças.</p>
-                <p>Com um olhar atento às tendências e às necessidades do ambiente corporativo, trago resiliência, visão estratégica e um compromisso sólido com a excelência. Meu objetivo é contribuir ativamente para o crescimento da empresa, aplicando minhas competências com eficácia e desenvolvendo novas habilidades que impulsionem a inovação e a competitividade do negócio.</p>
+            <div class="about-grid">
+                <div class="about-photo">
+                    <img src="assets/images/Perfil.png" alt="Jefferson Lima - Foto de perfil profissional">
+                </div>
+                <div class="about-content">
+                    <p class="lead">Com uma formação multidisciplinar em Direito, Contabilidade e Teologia, minha atuação é pautada na tradução de complexidades burocráticas e financeiras em soluções tecnológicas de alto desempenho. Como Desenvolvedor Full Stack e Analista Empresarial, projeto sistemas que já nascem em conformidade com as regras de negócio mais rígidas.</p>
+                    <div class="expertise-block">
+                        <h3>Minha Expertise Técnica e Consultiva</h3>
+                        <ul class="expertise-list">
+                            <li>
+                                <strong>Desenvolvimento Full Stack com Foco em Performance</strong>
+                                Construção de ecossistemas robustos utilizando Node.js e TypeScript, implementando arquiteturas de APIs escaláveis, integração de bancos de dados SQL/NoSQL e interfaces modernas com React, Next.js e React Native.
+                            </li>
+                            <li>
+                                <strong>Sistemas de Alta Complexidade (SaaS &amp; GovTech)</strong>
+                                Experiência no desenvolvimento e manutenção de soluções para Gestão Pública e sistemas de vendas, aplicando Docker para containerização e garantindo a integridade de dados em ambientes de alta carga.
+                            </li>
+                            <li>
+                                <strong>Engenharia de Software com Visão Legal</strong>
+                                Aplico meu background jurídico e contábil para estruturar lógicas de software que automatizam conformidades fiscais e regulatórias, utilizando Clean Architecture para garantir que o código seja tão auditável quanto um balanço contábil.
+                            </li>
+                            <li>
+                                <strong>Liderança Técnica e Infraestrutura</strong>
+                                Atuação como Supervisor Técnico, gerindo ciclos de deploy, revisão de código (Code Review) e otimização de consultas para garantir segurança da informação e baixa latência.
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="about-closing">Acredito que a tecnologia deve ser o braço direito da rentabilidade. Meu objetivo é transformar gargalos operacionais em produtos digitais intuitivos e seguros.</p>
+                </div>
             </div>
         </div>
     </section>
     <section id="github-chart" class="section fade-in">
         <div class="container">
-            <h2 class="section-title">Gráfico de Contribuições no <a href="https://github.com/Jefferson23br" target="_blank" class="github-link">GitHub</a></h2>
+            <h2 class="section-title">GitHub &amp; Stack Tecnológica</h2>
+            <p class="section-subtitle">Acompanhe minhas contribuições e acesse o portfólio completo de projetos no GitHub.</p>
+            <div class="github-cta">
+                <a href="https://github.com/Jefferson23br" target="_blank" rel="noopener" class="btn-github">
+                    Ver portfólio no GitHub — Jefferson23br →
+                </a>
+            </div>
+            <div class="github-dashboard">
+                <div class="github-stat-card">
+                    <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Jefferson23br&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;include_all_commits=true" alt="Estatísticas do GitHub de Jefferson23br" loading="lazy" onerror="this.onerror=null;this.src='https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jefferson23br&amp;theme=github_dark';">
+                </div>
+                <div class="github-stat-card">
+                    <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Jefferson23br&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true" alt="Linguagens mais usadas no GitHub" loading="lazy" onerror="this.onerror=null;this.src='https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jefferson23br&amp;theme=github_dark';">
+                </div>
+            </div>
             <div class="github-chart-wrapper">
-                <img src="https://ghchart.rshah.org/40c463/Jefferson23br" alt="Gráfico de Contribuições do GitHub" class="github-chart" />
+                <img src="https://ghchart.rshah.org/2563eb/Jefferson23br" alt="Gráfico de contribuições no GitHub" class="github-chart" loading="lazy">
             </div>
             <div class="stacks-container">
                 <h3 class="stacks-title">Stack de Tecnologias Principais dos Projetos</h3>
@@ -146,61 +186,176 @@
                 <div class="job-entry">
                     <div class="timeline-marker"></div>
                     <div class="job-content">
-                        <h3>Desenvolvedor Full Stack Pleno | FJN Tecnologia</h3>
-                        <p class="period">Início Julho / 2025 - Até o momento</p>
+                        <h3>Quatro Pontos Gráfica</h3>
+                        <p class="job-role">Analista Administrativo | Gestão Financeira, Auditoria Tributária &amp; Automação de Processos</p>
+                        <p class="period">fevereiro de 2026 — Presente</p>
+                        <p class="job-location">Ribeirão Preto, SP</p>
+                        <p>Atuo estrategicamente na Quatro Pontos Gráfica, conduzindo a gestão financeira e tributária da empresa com foco em precisão, conformidade e desempenho operacional. Realizo análises profundas de indicadores, fluxo de caixa, viabilidade financeira e rentabilidade, garantindo tomadas de decisão sólidas e alinhadas aos objetivos do negócio.</p>
+                        <p>Sou responsável pela auditoria tributária e contábil, assegurando aderência à legislação, mitigação de riscos e otimização fiscal. Desenvolvo metodologias estruturadas de controle interno, revisando processos e implementando padrões que aumentam a confiabilidade das informações e a eficiência administrativa.</p>
+                        <p>Integro também rotinas de gestão de RH, contribuindo para processos administrativos, compliance trabalhista e organização de dados e controles internos.</p>
+                        <p>Com forte atuação em tecnologia e automação, desenvolvo soluções personalizadas utilizando VBAScripts, criação de sistemas de Controle SaaS com Node.js, ReactJs e banco de dados em Oracle e MySQL, programação e ferramentas de alto desempenho, criando sistemas de controle, dashboards, rotinas automatizadas e fluxos inteligentes que elevam a produtividade, reduzem retrabalhos e maximizam resultados.</p>
+                        <p>Trabalho continuamente na otimização de processos, mapeando, analisando e redesenhando fluxos para gerar escalabilidade, transparência operacional e sustentabilidade financeira.</p>
+                    </div>
+                </div>
+                <div class="job-entry">
+                    <div class="timeline-marker"></div>
+                    <div class="job-content">
+                        <h3>Telsign Consultoria em Telecom e TI</h3>
+                        <p class="job-role">Analista de Sistemas &amp; Desenvolvedor Full Stack</p>
+                        <p class="period">junho de 2023 — março de 2026 (2 anos 10 meses)</p>
+                        <p class="job-location">São Paulo, Brasil</p>
+                        <p>Atuei na interseção entre a tecnologia de ponta e as regras de negócio complexas, sendo responsável pelo ciclo de vida completo de aplicações voltadas à gestão pública e ao setor corporativo (SaaS). Meu diferencial nesta posição foi a aplicação direta dos meus backgrounds em Contabilidade e Direito para garantir que cada linha de código estivesse em conformidade com as exigências fiscais e regulatórias dos clientes.</p>
+                        <p><strong>Principais Responsabilidades e Entregas:</strong></p>
                         <ul>
-                            <li><span class="negrito">Desenvolvedor Full Stack em SaaS de Gestão Pública</span><br>Atuo no desenvolvimento e manutenção de sistemas web voltados à gestão pública municipal, utilizando Node.js como principal tecnologia de backend. Responsável por garantir a qualidade, segurança e desempenho das aplicações, bem como a implementação de novas funcionalidades e correções evolutivas.</li>
-                            <li><span class="negrito">Desenvolvedor de SaaS para Imobiliaria</span><br>Desenvolvimento completo de Back-End e Front-End para SaaS online de Imobiliaria, sendo construído o Back-End em Node.js e Front-End em React.js</li>
-                            <li><span class="negrito">Desenvolvedor de Aplicativo mobile multi-plataforma para vendas via Sankhya</span><br>Desenvolvimento Completo de aplicativo de vendas vinculado ao sistema Sankhya de vendas, sendo um força de vendas para uso em lojas que utilizam sistema Sankhya, criação de API de três etapas e sistema de integração com estoque, e cadastros locais.</li>
-                            <li><span class="negrito">Competências:</span><br>SQL · Vue.js · Git · Integração e entrega contínuas (CI/CD) · Aplicativos web · Programação (computação) · Kanban · React Native · Bancos de dados relacionais · PhpMyAdmin · REST (Transferência de estado representacional) · Banco de dados · SaaS · Aplicativos móveis · JavaScript · Next.js · Java · Core Java · GitFlow · Amazon Web Services · PostgreSQL · Desenvolvimento de software · Java Aplication Developer · Node.js · Desenvolvimento de front-end · MySQL · .NET Framework · React.js · Desenvolvimento de banco de dados · Desenvolvimento web · API REST · Web Design Responsivo · JSON · PHP · Projetos de desenvolvimento · Desenvolvimento de back-end · HTML5</li>
+                            <li><strong>Arquitetura e Desenvolvimento Full Stack:</strong> Liderança técnica no desenvolvimento de sistemas SaaS e aplicações mobile, utilizando Node.js para construção de APIs robustas e escaláveis.</li>
+                            <li><strong>Soluções GovTech:</strong> Desenvolvimento e manutenção de módulos críticos para sistemas de gestão pública municipal, garantindo a integridade de dados sensíveis e a eficiência operacional dos órgãos públicos.</li>
+                            <li><strong>Otimização de Processos (Business Intelligence):</strong> Atuei como Analista Empresarial, mapeando gargalos operacionais e automatizando rotinas manuais através de software, resultando em redução significativa no tempo de processamento de dados.</li>
+                            <li><strong>Segurança e Performance:</strong> Implementação de protocolos de segurança avançados e otimização de consultas em bancos de dados para suportar altos volumes de transações.</li>
+                            <li><strong>Consultoria Técnica e Compliance:</strong> Apoio na tomada de decisão estratégica, traduzindo requisitos legais e contábeis em regras de negócio sistêmicas.</li>
+                        </ul>
+                        <div class="job-highlights">
+                            <h4>Resultados de Destaque</h4>
+                            <ul>
+                                <li>Redução significativa da latência de APIs críticas através da refatoração de código e otimização de bancos de dados.</li>
+                                <li>Liderança na integração de módulos de pagamento e nota fiscal eletrônica, garantindo conformidade com a legislação vigente.</li>
+                                <li>Implementação de metodologias ágeis que aumentaram a produtividade da equipe em entregas de novos módulos SaaS.</li>
+                            </ul>
+                        </div>
+                        <p class="job-stack"><strong>Stack:</strong> Node.js, React, React Native, TypeScript, PostgreSQL/MongoDB, APIs RESTful, AWS e Metodologias Ágeis.</p>
+                    </div>
+                </div>
+                <div class="job-entry">
+                    <div class="timeline-marker"></div>
+                    <div class="job-content">
+                        <h3>FJN Tecnologia</h3>
+                        <p class="job-role">Desenvolvedor Full Stack Pleno</p>
+                        <p class="period">agosto de 2025 — janeiro de 2026 (6 meses)</p>
+                        <p class="job-location">Cuiabá, Mato Grosso, Brasil</p>
+                        <p>Atuei no desenvolvimento e manutenção de sistemas web voltados à gestão pública municipal, utilizando Node.js como principal tecnologia de backend. Responsável por garantir a qualidade, segurança e desempenho das aplicações, bem como a implementação de novas funcionalidades e correções evolutivas.</p>
+                        <p><strong>Principais atividades:</strong></p>
+                        <ul>
+                            <li>Desenvolvimento e manutenção de sistemas em Node.js;</li>
+                            <li>Implementação de APIs e integração com bancos de dados;</li>
+                            <li>Suporte técnico e otimização de rotinas de software;</li>
+                            <li>Colaboração com a equipe técnica para melhorias contínuas no sistema;</li>
+                            <li>Cumprimento de padrões técnicos e prazos estabelecidos pela contratante.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="job-entry">
                     <div class="timeline-marker"></div>
                     <div class="job-content">
-                        <h3>Desenvolvedor Full Stack Pleno | Telsign Consultoria em Telecomunicações e TI</h3>
-                        <p class="period">Início Junho / 2023 - Até o momento</p>
-                        <ul>
-                            <li><span class="negrito">Desenvolvedor Full Stack Pleno</span><br>Período: Jan 2025 – O momento. Atuação na evolução de plataformas de Gestão de Telecom (TEM) e Transformação Digital, com foco em arquitetura de microsserviços e alta performance. Liderança Técnica: Desenvolvimento de novos módulos para gestão de ativos de TI/Telecom utilizando Node.js e React. Performance: Otimização de queries SQL para BI, reduzindo em 40% o tempo de carregamento de dashboards de auditoria. DevOps: Implementação de pipelines CI/CD para automação de deploys em ambiente cloud (AWS). Integrações: Criação de APIs RESTful robustas para conexão com operadoras e ERPs corporativos. Qualidade: Mentoria de desenvolvedores júnior, code reviews e aplicação de práticas de Clean Code. Stack: Node.js, React.js, TypeScript, SQL Server, Docker, AWS, Scrum.</li>
-                            <li><span class="negrito">Desenvolvedor Full Stack Júnior</span><br>Período: Jun 2023 – Dez 2024. Desenvolvimento de soluções de software para BPO e automação de processos no setor de telecomunicações, participando de todo o ciclo de vida (SDLC). Front-end: Criação de interfaces responsivas para portais internos utilizando React.js e Bootstrap. Back-end: Desenvolvimento e manutenção de APIs em Node.js/Express para gestão de inventário móvel e fixo. Sustentação: Correção de bugs, refatoração de código legado e melhorias de performance. Automação: Scripting para processamento de dados massivos e conciliação de faturas. Metodologia: Atuação colaborativa com analistas de negócio utilizando métodos ágeis (Scrum/Kanban). Stack: JavaScript, HTML5, CSS3, Git/GitHub, API REST, MySQL.</li>
-                            <li><span class="negrito">Competências:</span><br>Jest · PHP · Node.js · React.js · TypeScript · MySQL · PostgreSQL · SQL · Docker · AWS · Scrum · JavaScript · HTML5 · CSS3 · GitHub · API REST · MySQLi</li>
-                        </ul>
+                        <h3>Grupo Adriano Cobuccio</h3>
+                        <p class="job-role">Analista de Processos Administrativo e Financeiro e Analista de BI</p>
+                        <p class="period">novembro de 2022 — abril de 2023 (6 meses)</p>
+                        <p class="job-location">Monte Belo, Minas Gerais, Brasil</p>
+                        <p><strong>Analista de Processos e BI na Consolidação de Banco Digital Inovador</strong></p>
+                        <p>Atuei como Analista de Processos Administrativos e Financeiros e Analista de BI na fundação do banco digital do Grupo Adriano Cobuccio, desempenhando um papel estratégico na criação e implementação de processos robustos de segurança bancária e auditorias. Desenvolvi relatórios analíticos e apresentações impactantes para lideranças, garantindo decisões embasadas e eficientes. Contribuí significativamente para o crescimento exponencial da base de clientes, que saltou de 400 para 20.000 usuários em apenas dois meses.</p>
+                        <p><strong>Analista de Processos e BI na Gestão de Fundo de Investimentos Financeiros</strong></p>
+                        <p>Como Analista de Processos e BI no fundo de investimentos financeiros do Grupo Adriano Cobuccio, fui responsável pela validação e quitação de dados, implementando controles rigorosos por meio de soluções desenvolvidas em Python, Excel e Java. Estruturei e liderei a criação de um banco de dados automatizado, projetado para identificar erros em tempo real e assegurar conformidades regulatórias.</p>
                     </div>
                 </div>
                 <div class="job-entry">
                     <div class="timeline-marker"></div>
                     <div class="job-content">
-                        <h3>Analista de Processos Administrativo e Financeiro e Analista de BI | Grupo Adriano Cobuccio</h3>
-                        <p class="period">Início Novembro / 2022 - Fim Abril / 2023</p>
+                        <h3>Doce Paixão Lingerie</h3>
+                        <p class="job-role">Gestor Administrativo Financeiro</p>
+                        <p class="period">fevereiro de 2016 — maio de 2021 (5 anos 4 meses)</p>
+                        <p class="job-location">Juruaia, Minas Gerais, Brasil</p>
                         <ul>
-                            <li><span class="negrito">Analista de Processos e BI na Consolidação de Banco Digital Inovador</span><br>Atuei como Analista de Processos Administrativos e Financeiros e Analista de BI na fundação do banco digital do Grupo Adriano Cobuccio, desempenhando um papel estratégico na criação e implementação de processos robustos de segurança bancária e auditorias. Desenvolvi relatórios analíticos e apresentações impactantes para lideranças, garantindo decisões embasadas e eficientes. Contribuí significativamente para o crescimento exponencial da base de clientes, que saltou de 400 para 20.000 usuários em apenas dois meses, mantendo a mesma equipe e otimizando fluxos operacionais com foco em escalabilidade e inovação.</li>
-                            <li><span class="negrito">Analista de Processos e BI na Gestão de Fundo de Investimentos Financeiros</span><br>Como Analista de Processos e BI no fundo de investimentos financeiros do Grupo Adriano Cobuccio, fui responsável pela validação e quitação de dados, implementando controles rigorosos por meio de soluções desenvolvidas em Python, Excel e Java. Estruturei e liderei a criação de um banco de dados automatizado, projetado para identificar erros em tempo real e assegurar conformidades regulatórias. Minha atuação otimizou a gestão de processos, elevando a eficiência operacional e garantindo a precisão e confiabilidade das informações financeiras do fundo.</li>
+                            <li><strong>Gestor Administrativo Financeiro:</strong> Responsável pela gestão integral da empresa, abrangendo Produção, Loja e Financeiro. Implementava soluções como o 5S e outras estratégias para organização e redução de riscos operacionais. Gerenciava o controle de inadimplência, reduzindo-a de 7% para 0,5% em um ano.</li>
+                            <li><strong>Coordenador Financeiro e de Recursos Humanos:</strong> Gestão financeira e de RH, fluxo de caixa, contas a pagar e a receber, cobrança preventiva e de inadimplência.</li>
+                            <li><strong>Assistente Administrativo e TI:</strong> Gestão financeira e operacional, controle de caixa e fiscal. Liderou a implementação de um novo sistema ERP com controle de produção, vendas, faturamento e ficha técnica.</li>
+                            <li><strong>Auxiliar Administrativo de Escritório:</strong> Emissão de notas fiscais, planilhas de faturamento, cotação de fretes e coordenação de entregas.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="job-entry">
-                    <div class="timeline-marker"></div>
-                    <div class="job-content">
-                        <h3>Gestor Administrativo Financeiro | Doce Paixão Lingerie</h3>
-                        <p class="period">Início Fevereiro / 2016 - Maio / 2021</p>
-                        <ul>
-                            <li><span class="negrito">Gestor Administrativo Financeiro</span><br>Responsável pela gestão integral da empresa, abrangendo os setores de Produção, Loja e Financeiro. Implementava soluções como o 5S e outras estratégias para organização e redução de riscos operacionais. Gerenciava o controle de inadimplência, reduzindo-a de 7% para 0,5% em um ano, por meio de estratégias próprias.</li>
-                            <li><span class="negrito">Coordenador Financeiro e de Recursos Humanos</span><br>Responsável pela gestão financeira e de recursos humanos da empresa, coordenando integralmente o fluxo de caixa, contas a pagar e a receber, além de realizar cobrança preventiva e de inadimplência.</li>
-                            <li><span class="negrito">Assistente Administrativo e TI</span><br>Responsável pela gestão financeira e operacional, incluindo o controle de entrada de caixa, abertura e fechamento de caixa e controle fiscal. Liderou a implementação de um novo sistema ERP, incorporando funcionalidades para controle de produção, vendas, faturamento, fiscal, entrada de matéria-prima, conversão em produto final e cadastro de ficha técnica.</li>
-                            <li><span class="negrito">Auxiliar Administrativo de Escritório</span><br>Responsável pela execução de atividades administrativas e operacionais, incluindo a emissão de notas fiscais, preenchimento e gestão de planilhas de faturamento, cotação de fretes e coordenação de entregas de mercadorias para transportadoras.</li>
-                        </ul>
-                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="courses" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Cursos, Licenças e Certificados</h2>
+            <div class="courses-grid">
+                <div class="course-entry">
+                    <span class="course-issuer">Fundação Bradesco</span>
+                    <h3>Segurança em Tecnologia da Informação</h3>
+                    <p class="period">Emitida em maio de 2026</p>
+                    <p class="course-credential">Código: 406F077B-0FC2-4191-9CBD-DDFDB0EE720B</p>
                 </div>
-                <div class="job-entry">
-                    <div class="timeline-marker"></div>
-                    <div class="job-content">
-                        <h3>Chefe e Conferente de Depósito | Cooxupé - Cooperativa Regional de Cafeicultores em Guaxupé</h3>
-                        <p class="period">Início Março / 2013 - Dezembro / 2014</p>
-                        <ul>
-                            <li><span class="negrito">Chefe e Conferente de Depósito</span><br>Liderança e coordenação operacional, garantindo precisão e eficiência na conferência e movimentação de mercadorias, reduzindo erros e desperdícios. Otimização de processos logísticos, implementando melhorias que aceleraram a recepção, armazenamento e expedição de produtos, aumentando a produtividade da equipe.</li>
-                        </ul>
-                    </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Fundação Bradesco</span>
+                    <h3>Análise de Dados no Power BI</h3>
+                    <p class="period">Emitido em fevereiro de 2023</p>
+                    <p class="course-credential">Código: 3621B803-A505-4EC9-AE1E-C082274CADB6</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Fundação Bradesco</span>
+                    <h3>Criando um Projeto com Interface Gráfica Utilizando Python</h3>
+                    <p class="period">Emitido em dezembro de 2022</p>
+                    <p class="course-credential">Código: 72D765A8-A438-48E6-9FF1-E13D69501E7F</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Bradesco</span>
+                    <h3>Preparando Dados para Análise — Microsoft Power BI</h3>
+                    <p class="period">Emitida em janeiro de 2023</p>
+                    <p class="course-credential">Código: 0A957879-0809-4879-A164-87431F142803</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Bradesco</span>
+                    <h3>Introdução a Análise de Dados — Microsoft Power BI</h3>
+                    <p class="period">Emitida em dezembro de 2022</p>
+                    <p class="course-credential">Código: 32218772-E9BB-484E-9D2A-D0884DD75F48</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Bradesco</span>
+                    <h3>Análise de Balanços</h3>
+                    <p class="period">Emitida em junho de 2022</p>
+                    <p class="course-credential">Código: E8223C05-615D-40C1-9198-13111BFD2019</p>
+                    <p class="course-skills">Competências: Auditoria, Planejamento de projetos e mais.</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Fundação Getulio Vargas</span>
+                    <h3>Como Realizar Investimentos</h3>
+                    <p class="period">Emitida em agosto de 2021</p>
+                    <p class="course-credential">Código: 11389952.6152.OCWCFIEAD_00/2016-1</p>
+                    <p class="course-skills">Competências: Auditoria, Planejamento de projetos.</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">IF Sul de Minas Gerais</span>
+                    <h3>Marketing Digital</h3>
+                    <p class="period">Emitida em março de 2017</p>
+                    <p class="course-skills">Competências: Desenvolvimento de novos negócios</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">IF Sul de Minas Gerais</span>
+                    <h3>Curso de Telemarketing</h3>
+                    <p class="period">Emitida em janeiro de 2013</p>
+                    <p class="course-skills">Competências: SAC e Desenvolvimento de novos negócios</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Federaminas</span>
+                    <h3>Análises de Fraude</h3>
+                    <p class="period">Emitida em outubro de 2018</p>
+                    <p class="course-skills">Competências: Auditoria, Gestão de projetos</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Grasshopper Media</span>
+                    <h3>Fundamentos da Codificação I</h3>
+                    <p class="period">Emitida em dezembro de 2021</p>
+                    <p class="course-skills">Competências: Gestão de projetos, Desenvolvimento full stack</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">SharkTrend</span>
+                    <h3>Operações em Contratos Futuros Índices e Dólar</h3>
+                    <p class="period">Emitida em agosto de 2020</p>
+                    <p class="course-skills">Competências: Auditoria e Gestão de projetos</p>
+                </div>
+                <div class="course-entry">
+                    <span class="course-issuer">Bunker</span>
+                    <h3>Operações em Ações e Commodities</h3>
+                    <p class="period">Emitida em abril de 2020</p>
+                    <p class="course-skills">Competências: Auditoria e Gestão de projetos</p>
                 </div>
             </div>
         </div>
@@ -321,78 +476,6 @@
                         <span>GitHub</span>
                     </div>
                     <a href="https://github.com/Jefferson23br" target="_blank" class="project-link">Ver Projeto →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="courses" class="section fade-in">
-        <div class="container">
-            <h2 class="section-title">Cursos</h2>
-            <div class="courses-grid">
-                <div class="course-entry">
-                    <h3>Modelando Dados no Power BI | Fundação Bradesco</h3>
-                    <p class="period">Março / 2023 - 150 horas - Concluído</p>
-                    <p>Desenvolvi expertise na criação de modelos de dados robustos, intuitivos e de alta performance no Power BI, garantindo análises eficientes e de fácil manutenção.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Introdução à Análise de Dados - Microsoft Power BI | Fundação Bradesco</h3>
-                    <p class="period">Fevereiro / 2023 - 300 horas - Concluído</p>
-                    <p>Adquiri conhecimento abrangente sobre o papel do analista de dados, incluindo habilidades essenciais, processos e responsabilidades.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Desenvolvimento de Aplicações com Interface Gráfica em Python | Fundação Bradesco</h3>
-                    <p class="period">Fevereiro / 2023 - 150 horas - Concluído</p>
-                    <p>Aprofundei meu conhecimento no desenvolvimento de aplicações interativas com interfaces gráficas (GUI) utilizando Python, com foco na biblioteca Kivy.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Análise de Dados no Power BI | Fundação Bradesco</h3>
-                    <p class="period">Julho / 2023 - 150 horas - Concluído</p>
-                    <p>Aprimorei minhas habilidades em análise de dados no Power BI, dominando recursos avançados como P e R, que permite extrair insights analíticos diretamente por meio de perguntas em linguagem natural.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Preparação de Dados para Análise - Microsoft Power BI | Fundação Bradesco</h3>
-                    <p class="period">Outubro / 2023 - 150 horas - Concluído</p>
-                    <p>Desenvolvi expertise na preparação de dados para análise no Power BI, utilizando o Power Query para extrair e integrar dados de diversas fontes.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Análise de Balanços | Fundação Bradesco</h3>
-                    <p class="period">Janeiro / 2021 - 300 horas - Concluído</p>
-                    <p>Aprofundei meu conhecimento na análise de demonstrações financeiras, desenvolvendo habilidades para interpretar e avaliar a saúde financeira de empresas.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Fundamentos da Codificação | Google Grasshopper</h3>
-                    <p class="period">Janeiro / 2021 - Dezembro / 2021 - Concluído</p>
-                    <p>Curso de fundamentos de codificação oferecido pelo Google Grasshopper.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Fundamentos de Investimentos | FGV - Fundação Getulio Vargas</h3>
-                    <p class="period">Janeiro / 2019 - Dezembro / 2020 - Concluído</p>
-                    <p>Concluí o curso de Fundamentos de Investimentos oferecido pela FGV, onde adquiri conhecimentos práticos e teóricos para tomar decisões financeiras estratégicas.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Operações em Contratos Futuros de Índice e Dólar | SharkTank</h3>
-                    <p class="period">Janeiro / 2017 - 150 Horas - Concluído</p>
-                    <p>Concluí o curso de Operações em Contratos Futuros de Índice e Dólar pela SharkTrend, onde desenvolvi habilidades avançadas na negociação de minicontratos de índice (WIN) e dólar (WDO) no mercado futuro da B3.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Operações em Ações e Commodities | Bunker</h3>
-                    <p class="period">Março / 2017 - 150 Horas - Concluído</p>
-                    <p>Concluí o curso de Operações em Ações e Commodities, onde desenvolvi competências avançadas para operar no mercado de capitais e de commodities.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Análise de Fraudes | Federaminas</h3>
-                    <p class="period">Março / 2018 - 60 Horas - Concluído</p>
-                    <p>Concluí o curso de Análise de Fraudes oferecido pela Federaminas, onde desenvolvi habilidades especializadas na identificação, prevenção e investigação de fraudes em contextos empresariais.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Curso de Marketing Digital | IFSUL - Instituto Federal do Sul de Minas</h3>
-                    <p class="period">Março / 2017 - 150 Horas - Concluído</p>
-                    <p>Concluí o curso de Marketing Digital pelo IFSUL de Minas, adquirindo expertise em estratégias online para promoção de marcas e produtos.</p>
-                </div>
-                <div class="course-entry">
-                    <h3>Telemarketing | IFSUL - Instituto Federal do Sul de Minas</h3>
-                    <p class="period">Janeiro / 2013 - 30 Horas - Concluído</p>
-                    <p>Concluí o curso de Telemarketing oferecido pelo IFSUL de Minas, onde desenvolvi habilidades essenciais para comunicação eficaz e atendimento ao cliente.</p>
                 </div>
             </div>
         </div>
