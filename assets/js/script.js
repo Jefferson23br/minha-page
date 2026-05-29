@@ -37,27 +37,36 @@ const langSwitcher = document.getElementById('langSwitcher');
 const langToggle = document.getElementById('langToggle');
 const langDropdown = document.getElementById('langDropdown');
 
+function setLangDropdown(open) {
+    if (!langDropdown || !langToggle) return;
+    langDropdown.classList.toggle('is-open', open);
+    langToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    langDropdown.setAttribute('aria-hidden', open ? 'false' : 'true');
+}
+
 if (langToggle && langDropdown) {
+    let suppressLangClose = false;
+
     langToggle.addEventListener('click', function(e) {
+        e.preventDefault();
         e.stopPropagation();
-        const isOpen = langDropdown.classList.toggle('is-open');
-        langDropdown.hidden = !isOpen;
-        langToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        suppressLangClose = true;
+        setLangDropdown(!langDropdown.classList.contains('is-open'));
+        window.setTimeout(function() {
+            suppressLangClose = false;
+        }, 0);
     });
 
     document.addEventListener('click', function(e) {
-        if (langSwitcher && !langSwitcher.contains(e.target)) {
-            langDropdown.classList.remove('is-open');
-            langDropdown.hidden = true;
-            langToggle.setAttribute('aria-expanded', 'false');
+        if (suppressLangClose) return;
+        if (langDropdown.classList.contains('is-open') && langSwitcher && !langSwitcher.contains(e.target)) {
+            setLangDropdown(false);
         }
     });
 
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && langDropdown.classList.contains('is-open')) {
-            langDropdown.classList.remove('is-open');
-            langDropdown.hidden = true;
-            langToggle.setAttribute('aria-expanded', 'false');
+            setLangDropdown(false);
         }
     });
 }
@@ -67,6 +76,7 @@ hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('active');
     navLinks.classList.toggle('active');
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    setLangDropdown(false);
 });
 
 // Close menu when clicking on a link
