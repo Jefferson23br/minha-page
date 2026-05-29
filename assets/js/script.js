@@ -32,6 +32,36 @@ window.addEventListener('scroll', function() {
     lastScroll = currentScroll;
 });
 
+// Language switcher dropdown
+const langSwitcher = document.getElementById('langSwitcher');
+const langToggle = document.getElementById('langToggle');
+const langDropdown = document.getElementById('langDropdown');
+
+if (langToggle && langDropdown) {
+    langToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isOpen = langDropdown.classList.toggle('is-open');
+        langDropdown.hidden = !isOpen;
+        langToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    document.addEventListener('click', function(e) {
+        if (langSwitcher && !langSwitcher.contains(e.target)) {
+            langDropdown.classList.remove('is-open');
+            langDropdown.hidden = true;
+            langToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && langDropdown.classList.contains('is-open')) {
+            langDropdown.classList.remove('is-open');
+            langDropdown.hidden = true;
+            langToggle.setAttribute('aria-expanded', 'false');
+        }
+    });
+}
+
 // Hamburger menu toggle
 hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('active');
