@@ -26,12 +26,13 @@ $currentMeta = $langMeta[$currentLang] ?? $langMeta['pt'];
             <path d="M6 9l6 6 6-6"/>
         </svg>
     </button>
-    <div class="lang-dropdown" id="langDropdown" role="menu" hidden>
+    <div class="lang-dropdown" id="langDropdown" role="menu" aria-hidden="true">
         <?php foreach ($langMeta as $code => $meta): ?>
             <?php if (!isset($langLinks[$code])) continue; ?>
             <a href="<?php echo htmlspecialchars($langLinks[$code]); ?>"
                class="lang-option<?php echo $currentLang === $code ? ' is-active' : ''; ?>"
                role="menuitem"
+               aria-label="<?php echo htmlspecialchars($meta['country'] . ' — ' . $meta['label']); ?>"
                title="<?php echo htmlspecialchars($meta['country'] . ' — ' . $meta['label']); ?>">
                 <img class="lang-menu-img"
                      src="<?php echo htmlspecialchars(($assetsBase ?? 'assets/') . 'images/flags/' . $meta['iso'] . '.png'); ?>"
@@ -40,10 +41,6 @@ $currentMeta = $langMeta[$currentLang] ?? $langMeta['pt'];
                      alt=""
                      loading="lazy"
                      decoding="async">
-                <span class="lang-option-text">
-                    <span class="lang-country"><?php echo htmlspecialchars($meta['country']); ?></span>
-                    <span class="lang-name"><?php echo htmlspecialchars($meta['label']); ?></span>
-                </span>
             </a>
         <?php endforeach; ?>
     </div>
