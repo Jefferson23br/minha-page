@@ -39,6 +39,8 @@ return [
     'github_stat_followers' => 'Seguidores',
     'github_stat_following' => 'Siguiendo',
     'github_stat_since' => 'Desde',
+    'github_commits_eyebrow' => 'Commits en %s',
+    'github_commits_caption' => 'contribuciones registradas en GitHub',
     'github_stats_unavailable' => 'Estadisticas temporalmente no disponibles.',
     'github_langs_title' => 'Principales lenguajes',
     'github_langs_alt' => 'Lenguajes mas usados en GitHub',
