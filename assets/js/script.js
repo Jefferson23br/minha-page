@@ -308,36 +308,6 @@ contactItems.forEach(item => {
 });
 
 // ============================================
-// GITHUB STATS CARDS (fallback chain)
-// ============================================
-document.querySelectorAll('.github-stat-img').forEach(function(img) {
-    const fallbacks = (img.dataset.fallbacks || '')
-        .split('|')
-        .map(function(url) { return url.trim(); })
-        .filter(Boolean);
-    let fallbackIndex = 0;
-
-    img.classList.add('is-loading');
-
-    function tryNextSource() {
-        if (fallbackIndex < fallbacks.length) {
-            img.src = fallbacks[fallbackIndex++];
-            return;
-        }
-        img.classList.remove('is-loading');
-        img.classList.add('is-error');
-    }
-
-    img.addEventListener('load', function() {
-        img.classList.remove('is-loading', 'is-error');
-    });
-
-    img.addEventListener('error', function() {
-        tryNextSource();
-    });
-});
-
-// ============================================
 // GITHUB CHART LAZY LOADING
 // ============================================
 const githubChart = document.querySelector('.github-chart');
