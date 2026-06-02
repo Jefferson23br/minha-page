@@ -39,6 +39,8 @@ return [
     'github_stat_followers' => '关注者',
     'github_stat_following' => '关注中',
     'github_stat_since' => '始于',
+    'github_commits_eyebrow' => '%s 年提交',
+    'github_commits_caption' => 'GitHub 贡献记录',
     'github_stats_unavailable' => '统计暂时不可用。',
     'github_langs_title' => '主要语言',
     'github_langs_alt' => 'GitHub 最常用语言',
