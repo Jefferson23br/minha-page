@@ -115,7 +115,10 @@ function render_github_languages(array $t, string $username = 'Jefferson23br'): 
     $ariaLabel = $t['github_langs_alt'] ?? $title;
 
     echo '<div class="github-langs" role="img" aria-label="' . e($ariaLabel) . '">';
+    echo '<div class="github-card__heading">';
+    echo '<span class="github-card__heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>';
     echo '<h3 class="github-card__title">' . e($title) . '</h3>';
+    echo '</div>';
 
     if ($langs === null || $langs === []) {
         echo '<p class="github-langs__empty">' . e($t['github_langs_unavailable'] ?? 'Languages unavailable.') . '</p>';
@@ -136,13 +139,14 @@ function render_github_languages(array $t, string $username = 'Jefferson23br'): 
         $pct = max(4, (int) round(($bytes / $totalBytes) * 100));
         $color = github_language_color($lang);
         echo '<li class="github-langs__item">';
+        echo '<div class="github-langs__row" style="--lang-color:' . e($color) . ';--lang-pct:' . e((string) $pct) . '%">';
         echo '<div class="github-langs__meta">';
-        echo '<span class="github-langs__dot" style="background:' . e($color) . '"></span>';
+        echo '<span class="github-langs__dot"></span>';
         echo '<span class="github-langs__name">' . e($lang) . '</span>';
         echo '<span class="github-langs__pct">' . e((string) $pct) . '%</span>';
         echo '</div>';
-        echo '<div class="github-langs__track"><span class="github-langs__bar" style="width:' . e((string) $pct) . '%;background:' . e($color) . '"></span></div>';
-        echo '</li>';
+        echo '<div class="github-langs__track"><span class="github-langs__bar"></span></div>';
+        echo '</div></li>';
     }
     echo '</ul>';
     echo '</div>';
