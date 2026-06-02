@@ -51,6 +51,8 @@ return [
     'github_stat_followers' => 'Followers',
     'github_stat_following' => 'Following',
     'github_stat_since' => 'Since',
+    'github_commits_eyebrow' => 'Commits in %s',
+    'github_commits_caption' => 'contributions recorded on GitHub',
     'github_stats_unavailable' => 'Stats temporarily unavailable.',
     'github_langs_title' => 'Top languages',
     'github_langs_alt' => 'Most used languages on GitHub',
