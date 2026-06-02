@@ -107,10 +107,24 @@ if (!function_exists('e')) {
             </div>
             <div class="github-dashboard">
                 <div class="github-stat-card">
-                    <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Jefferson23br&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;include_all_commits=true" alt="<?php echo e($t['github_stats_alt']); ?>" loading="lazy" onerror="this.onerror=null;this.src='https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jefferson23br&amp;theme=github_dark';">
+                    <img
+                        class="github-stat-img"
+                        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jefferson23br&amp;theme=tokyonight"
+                        data-fallbacks="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jefferson23br&amp;theme=github_dark|https://github-readme-stats.vercel.app/api?username=Jefferson23br&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true"
+                        alt="<?php echo e($t['github_stats_alt']); ?>"
+                        loading="lazy"
+                        decoding="async"
+                    >
                 </div>
                 <div class="github-stat-card">
-                    <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Jefferson23br&amp;layout=compact&amp;theme=tokyonight&amp;hide_border=true" alt="<?php echo e($t['github_langs_alt']); ?>" loading="lazy" onerror="this.onerror=null;this.src='https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jefferson23br&amp;theme=github_dark';">
+                    <img
+                        class="github-stat-img"
+                        src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jefferson23br&amp;theme=tokyonight"
+                        data-fallbacks="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Jefferson23br&amp;theme=tokyonight|https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jefferson23br&amp;theme=github_dark"
+                        alt="<?php echo e($t['github_langs_alt']); ?>"
+                        loading="lazy"
+                        decoding="async"
+                    >
                 </div>
             </div>
             <div class="github-chart-wrapper">
