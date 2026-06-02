@@ -18,7 +18,7 @@ if (!function_exists('e')) {
     <link rel="icon" href="<?php echo e($assetsBase); ?>images/logo1 (1).png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="loader" class="loader">
@@ -121,7 +121,10 @@ if (!function_exists('e')) {
                     </article>
                 </div>
                 <article class="github-card github-card--wide">
-                    <h3 class="github-card__title"><?php echo e($t['github_activity_title']); ?></h3>
+                    <div class="github-card__heading">
+                        <span class="github-card__heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+                        <h3 class="github-card__title"><?php echo e($t['github_activity_title']); ?></h3>
+                    </div>
                     <div class="github-activity">
                         <img src="https://ghchart.rshah.org/2563eb/Jefferson23br" alt="<?php echo e($t['github_chart_alt']); ?>" class="github-chart" loading="lazy" decoding="async">
                     </div>
