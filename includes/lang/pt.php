@@ -52,7 +52,7 @@ return [
     'github_stat_following' => 'Seguindo',
     'github_stat_since' => 'Desde',
     'github_commits_eyebrow' => 'Commits em %s',
-    'github_commits_caption' => 'contribuições registradas no GitHub',
+    'github_commits_caption' => 'Total de contribuições no GitHub',
     'github_stats_unavailable' => 'Estatísticas temporariamente indisponíveis.',
     'github_langs_title' => 'Principais linguagens',
     'github_langs_alt' => 'Linguagens mais usadas no GitHub',
