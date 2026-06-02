@@ -98,37 +98,34 @@ if (!function_exists('e')) {
     </section>
     <section id="github-chart" class="section fade-in">
         <div class="container">
-            <h2 class="section-title"><?php echo e($t['github_title']); ?></h2>
-            <p class="section-subtitle"><?php echo e($t['github_subtitle']); ?></p>
-            <div class="github-cta">
-                <a href="https://github.com/Jefferson23br" target="_blank" rel="noopener" class="btn-github">
+            <div class="github-header">
+                <div class="github-header__intro">
+                    <h2 class="section-title"><?php echo e($t['github_title']); ?></h2>
+                    <p class="section-subtitle"><?php echo e($t['github_subtitle']); ?></p>
+                </div>
+                <a href="https://github.com/Jefferson23br" target="_blank" rel="noopener" class="github-header__cta">
                     <?php echo e($t['github_cta']); ?>
                 </a>
             </div>
-            <div class="github-dashboard">
-                <div class="github-stat-card">
-                    <img
-                        class="github-stat-img"
-                        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jefferson23br&amp;theme=tokyonight"
-                        data-fallbacks="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Jefferson23br&amp;theme=github_dark|https://github-readme-stats.vercel.app/api?username=Jefferson23br&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true"
-                        alt="<?php echo e($t['github_stats_alt']); ?>"
-                        loading="lazy"
-                        decoding="async"
-                    >
+            <?php
+            require_once __DIR__ . '/github-profile-stats.php';
+            require_once __DIR__ . '/github-languages.php';
+            ?>
+            <div class="github-panel">
+                <div class="github-panel__row">
+                    <article class="github-card">
+                        <?php render_github_profile_stats($t); ?>
+                    </article>
+                    <article class="github-card">
+                        <?php render_github_languages($t); ?>
+                    </article>
                 </div>
-                <div class="github-stat-card">
-                    <img
-                        class="github-stat-img"
-                        src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jefferson23br&amp;theme=tokyonight"
-                        data-fallbacks="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Jefferson23br&amp;theme=tokyonight|https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Jefferson23br&amp;theme=github_dark"
-                        alt="<?php echo e($t['github_langs_alt']); ?>"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </div>
-            </div>
-            <div class="github-chart-wrapper">
-                <img src="https://ghchart.rshah.org/2563eb/Jefferson23br" alt="<?php echo e($t['github_chart_alt']); ?>" class="github-chart" loading="lazy">
+                <article class="github-card github-card--wide">
+                    <h3 class="github-card__title"><?php echo e($t['github_activity_title']); ?></h3>
+                    <div class="github-activity">
+                        <img src="https://ghchart.rshah.org/2563eb/Jefferson23br" alt="<?php echo e($t['github_chart_alt']); ?>" class="github-chart" loading="lazy" decoding="async">
+                    </div>
+                </article>
             </div>
             <div class="stacks-container">
                 <h3 class="stacks-title"><?php echo e($t['stacks_title']); ?></h3>
