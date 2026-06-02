@@ -149,9 +149,12 @@ function render_github_profile_stats(array $t, string $username = 'Jefferson23br
 
     echo '<div class="github-profile__head">';
     if ($avatar !== '') {
-        echo '<img class="github-profile__avatar" src="' . e($avatar) . '" alt="" width="64" height="64" loading="lazy" decoding="async">';
+        echo '<div class="github-profile__avatar-wrap">';
+        echo '<img class="github-profile__avatar" src="' . e($avatar) . '" alt="" width="72" height="72" loading="lazy" decoding="async">';
+        echo '</div>';
     }
     echo '<div class="github-profile__identity">';
+    echo '<span class="github-profile__badge">GitHub</span>';
     if ($name !== '') {
         echo '<span class="github-profile__name">' . e($name) . '</span>';
     }
@@ -171,18 +174,38 @@ function render_github_profile_stats(array $t, string $username = 'Jefferson23br
             $countHtml = e($parts[1]) . '<span class="github-profile__commits-suffix">' . e($parts[2]) . '</span>';
         }
         echo '<div class="github-profile__commits">';
+        echo '<div class="github-profile__commits-shine" aria-hidden="true"></div>';
+        echo '<div class="github-profile__commits-body">';
+        echo '<div class="github-profile__commits-icon" aria-hidden="true">';
+        echo '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.5"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>';
+        echo '</div>';
+        echo '<div class="github-profile__commits-text">';
         echo '<p class="github-profile__commits-eyebrow">' . e($eyebrow) . '</p>';
         echo '<p class="github-profile__commits-value">' . $countHtml . '</p>';
         echo '<p class="github-profile__commits-caption">' . e($caption) . '</p>';
-        echo '</div>';
+        echo '</div></div></div>';
+    }
+
+    $statItems = [
+        ['class' => 'repos', 'label' => $t['github_stat_repos'], 'value' => (string) $repos, 'paths' => ['M4 19.5A2.5 2.5 0 0 1 6.5 17H20', 'M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z']],
+        ['class' => 'followers', 'label' => $t['github_stat_followers'], 'value' => (string) $followers, 'paths' => ['M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2', 'M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z']],
+        ['class' => 'following', 'label' => $t['github_stat_following'], 'value' => (string) $following, 'paths' => ['M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2', 'M12 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z']],
+    ];
+    if ($sinceYear !== '') {
+        $statItems[] = ['class' => 'since', 'label' => $t['github_stat_since'], 'value' => $sinceYear, 'paths' => ['M8 2v4', 'M16 2v4', 'M3 10h18', 'M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z']];
     }
 
     echo '<dl class="github-profile__stats">';
-    echo '<div class="github-profile__stat"><dt>' . e($t['github_stat_repos']) . '</dt><dd>' . e((string) $repos) . '</dd></div>';
-    echo '<div class="github-profile__stat"><dt>' . e($t['github_stat_followers']) . '</dt><dd>' . e((string) $followers) . '</dd></div>';
-    echo '<div class="github-profile__stat"><dt>' . e($t['github_stat_following']) . '</dt><dd>' . e((string) $following) . '</dd></div>';
-    if ($sinceYear !== '') {
-        echo '<div class="github-profile__stat"><dt>' . e($t['github_stat_since']) . '</dt><dd>' . e($sinceYear) . '</dd></div>';
+    foreach ($statItems as $item) {
+        echo '<div class="github-profile__stat github-profile__stat--' . e($item['class']) . '">';
+        echo '<span class="github-profile__stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">';
+        foreach ($item['paths'] as $path) {
+            echo '<path d="' . e($path) . '"/>';
+        }
+        echo '</svg></span>';
+        echo '<dt>' . e($item['label']) . '</dt>';
+        echo '<dd>' . e($item['value']) . '</dd>';
+        echo '</div>';
     }
     echo '</dl>';
     echo '</div>';
