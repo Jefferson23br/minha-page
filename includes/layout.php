@@ -191,7 +191,7 @@ if (!function_exists('e')) {
             </div>
         </div>
     </section>
-    <section id="experience" class="section fade-in">
+    <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title"><?php echo e($t['experience_title']); ?></h2>
             <div class="timeline">
