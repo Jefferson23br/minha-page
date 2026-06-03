@@ -144,9 +144,11 @@ window.addEventListener('scroll', updateActiveNavLink);
 // ============================================
 // SCROLL ANIMATIONS
 // ============================================
+const isNarrowViewport = window.matchMedia('(max-width: 768px)').matches;
+
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: isNarrowViewport ? 0 : 0.1,
+    rootMargin: isNarrowViewport ? '0px' : '0px 0px -50px 0px'
 };
 
 const observer = new IntersectionObserver(function(entries) {
@@ -359,28 +361,31 @@ stackBadges.forEach(badge => {
 // TIMELINE ANIMATION
 // ============================================
 const timelineEntries = document.querySelectorAll('.job-entry');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const timelineObserver = new IntersectionObserver(function(entries) {
-    entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-            setTimeout(() => {
-                entry.target.style.opacity = '0';
-                entry.target.style.transform = 'translateX(-50px)';
-                entry.target.style.transition = 'all 0.6s ease';
-                
-                setTimeout(() => {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateX(0)';
-                }, 100);
-            }, index * 200);
-            timelineObserver.unobserve(entry.target);
-        }
+if (timelineEntries.length && !prefersReducedMotion) {
+    const timelineObserver = new IntersectionObserver(function(entries) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove('timeline-pending');
+                entry.target.classList.add('timeline-visible');
+                timelineObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: isNarrowViewport ? 0.1 : 0.2,
+        rootMargin: isNarrowViewport ? '0px 0px -5% 0px' : '0px 0px -10% 0px'
     });
-}, { threshold: 0.2 });
 
-timelineEntries.forEach(entry => {
-    timelineObserver.observe(entry);
-});
+    timelineEntries.forEach(entry => {
+        entry.classList.add('timeline-pending');
+        timelineObserver.observe(entry);
+    });
+} else {
+    timelineEntries.forEach(entry => {
+        entry.classList.add('timeline-visible');
+    });
+}
 
 // ============================================
 // CURSOR EFFECT (Optional)
