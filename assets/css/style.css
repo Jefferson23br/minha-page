@@ -1029,6 +1029,24 @@ body {
     position: relative;
     margin-bottom: 40px;
     padding-left: 48px;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.job-entry.timeline-pending {
+    opacity: 0;
+    transform: translateY(24px);
+}
+
+.job-entry.timeline-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .job-entry.timeline-pending {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .timeline-marker {
