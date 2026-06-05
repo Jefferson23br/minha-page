@@ -188,14 +188,13 @@ return [
     ],
     'education_title' => '学术教育',
     'education' => [
-        ['icon' => '🎓', 'title' => '计算机科学学士 | Anhanguera', 'period' => '2025年7月 - 至今 - 在读'],
         ['icon' => '⏸️', 'title' => '会计学学士 | Anhanguera', 'period' => '2022年2月 - 2024年暂停'],
         ['icon' => '✅', 'title' => '法学学士 | Unifeg - University Center of Guaxupe Educational Foundation', 'period' => '2018年1月 - 2022年12月 - 已完成'],
         ['icon' => '⏸️', 'title' => '神学学士 | Uninter', 'period' => '2013年1月 - 2014年12月 - 已暂停'],
     ],
     'portfolio_title' => '项目与作品集',
     'portfolio' => [
-        ['icon' => '📱', 'title' => 'Mundo de Historias - 儿童跨平台应用（Flutter & Firebase）', 'description' => '我参与了 "Mundo de Historias" 应用从概念到端到端开发的全过程。这是一个面向儿童用户的移动平台（iOS 与 Android）。我负责完整项目周期，从品牌建设（口号、Logo、视觉识别）到无服务器架构的技术实现。', 'tech' => ['Flutter', 'Firebase', 'Dart']],
+        ['icon' => '📱', 'title' => 'Mundo de Historias — 儿童数字阅读平台（Flutter & Firebase）', 'description' => '面向儿童的完整故事分发生态系统，涵盖童话、寓言与插图故事。项目包含跨平台移动应用（historias_app）、管理后台（historias_admin）以及基于 Firebase 的无服务器 Cloud Functions。支持 RBAC 认证、数字内容 CRUD、嵌入式 PDF 阅读器、免费增值模式与集中式内容管理。', 'tech' => ['Flutter', 'Dart', 'Firebase', 'Node.js'], 'link_url' => 'https://github.com/Jefferson23br/historias_app', 'link_text' => '在 GitHub 查看 →'],
         ['icon' => '🌾', 'title' => '农业综合管理平台（Web 与 Mobile）', 'description' => '我构思并正在开发一个面向农业的完整 SaaS 平台，聚焦整合关键田间信息。目标是为生产者提供统一工具，用于土地管理、作物管理以及逐季产量历史追踪。', 'tech' => ['Node.js', 'React.js', 'Flutter', 'PostgreSQL']],
         ['icon' => '💰', 'title' => '里程报销 ERP', 'description' => '我在 4 天内从零开发出完整的全栈里程报销管理应用，将运营需求转化为稳健可用的 Web 系统。该方案已投入生产，后端部署于 VPS，前端已集成到网站中。', 'tech' => ['Node.js', 'PostgreSQL', 'JavaScript'], 'link_url' => 'https://www.auctusconsultoria.com.br/Reembolso-Km/frontend/Reembolso', 'link_text' => '查看项目 →'],
         ['icon' => '🎫', 'title' => '工单管理系统（Help Desk）', 'description' => '我负责开发完整的工单管理方案，分为两个主要阶段（PT1 与 PT2）。第一部分：界面与工单创建。第二部分：逻辑与管理，含控制面板（dashboard），让运营人员高效处理请求。', 'tech' => ['React', 'Node.js', 'MySQL']],
