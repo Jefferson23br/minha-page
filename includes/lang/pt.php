@@ -200,7 +200,6 @@ return [
     ],
     'education_title' => 'Formação Acadêmica',
     'education' => [
-        ['icon' => '🎓', 'title' => 'Bacharel em Ciencias Computacao | Anhanguera', 'period' => 'Julho / 2025 - Ate o momento - Em Andamento'],
         ['icon' => '⏸️', 'title' => 'Bacharel em Ciencias Contabeis | Anhanguera', 'period' => 'Fevereiro / 2022 - Trancado 2024'],
         ['icon' => '✅', 'title' => 'Bacharel em Direito | Unifeg - Centro Universitario da Fundacao Educacional Guaxupe', 'period' => 'Janeiro / 2018 - Dezembro / 2022 - Concluida'],
         ['icon' => '⏸️', 'title' => 'Bacharel em Teologia | Uninter', 'period' => 'Janeiro / 2013 - Dezembro / 2014 - Trancada'],
@@ -209,9 +208,11 @@ return [
     'portfolio' => [
         [
             'icon' => '📱',
-            'title' => 'Mundo de Historias - Aplicativo Infantil Multiplataforma (Flutter & Firebase)',
-            'description' => 'Participei da idealizacao e desenvolvimento completo (end-to-end) do aplicativo "Mundo de Historias", uma plataforma movel (iOS e Android) focada no publico infantil. Fui responsavel pelo ciclo completo do projeto, desde a criacao do branding (slogan, logo, identidade visual) ate a implementacao tecnica da arquitetura serverless.',
-            'tech' => ['Flutter', 'Firebase', 'Dart'],
+            'title' => 'Mundo de Historias — Plataforma Digital de Leitura Infantil (Flutter & Firebase)',
+            'description' => 'Ecossistema completo para distribuicao de contos, fabulas e historias ilustradas voltado ao publico infantil. Combina app mobile multiplataforma (historias_app), painel administrativo (historias_admin) e Cloud Functions serverless no Firebase. Inclui autenticacao com RBAC, CRUD de conteudo digital, leitor de PDF embarcado, modelo freemium e gestao centralizada do acervo.',
+            'tech' => ['Flutter', 'Dart', 'Firebase', 'Node.js'],
+            'link_url' => 'https://github.com/Jefferson23br/historias_app',
+            'link_text' => 'Ver no GitHub →',
         ],
         [
             'icon' => '🌾',
