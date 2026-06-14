@@ -207,6 +207,16 @@ return [
     'portfolio_title' => 'Projetos e Portfólio',
     'portfolio' => [
         [
+            'icon' => '👥',
+            'title' => 'CRM Piloto — Sistema Multi-Empresa de Relacionamento com Clientes (Python & Oracle)',
+            'description' => 'Projeto piloto de CRM desenvolvido para empresas que precisam de controle centralizado de clientes, leads, atendimentos e funil de vendas. Sistema multi-tenant com backend Python/FastAPI em VPS, frontend Vue.js em hospedagem estatica e banco Oracle Database, comunicando-se via API REST com autenticacao JWT.',
+            'tech' => ['Python', 'FastAPI', 'Vue.js', 'Oracle'],
+            'links' => [
+                ['url' => 'https://purple-falcon-333770.hostingersite.com/', 'text' => 'Ver Projeto →'],
+                ['url' => 'https://api8.auctusconsultoria.com.br/docs', 'text' => 'API Docs →'],
+            ],
+        ],
+        [
             'icon' => '📱',
             'title' => 'Mundo de Historias — Plataforma Digital de Leitura Infantil (Flutter & Firebase)',
             'description' => 'Ecossistema completo para distribuicao de contos, fabulas e historias ilustradas voltado ao publico infantil. Combina app mobile multiplataforma (historias_app), painel administrativo (historias_admin) e Cloud Functions serverless no Firebase. Inclui autenticacao com RBAC, CRUD de conteudo digital, leitor de PDF embarcado, modelo freemium e gestao centralizada do acervo.',
