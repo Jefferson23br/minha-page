@@ -285,8 +285,19 @@ if (!function_exists('e')) {
                                 <span><?php echo e($tech); ?></span>
                             <?php endforeach; ?>
                         </div>
-                        <?php if (!empty($project['link_url']) && !empty($project['link_text'])): ?>
-                            <a href="<?php echo e($project['link_url']); ?>" target="_blank" class="project-link"><?php echo e($project['link_text']); ?></a>
+                        <?php
+                        $projectLinks = !empty($project['links']) ? $project['links'] : (
+                            !empty($project['link_url']) && !empty($project['link_text'])
+                                ? [['url' => $project['link_url'], 'text' => $project['link_text']]]
+                                : []
+                        );
+                        ?>
+                        <?php if (!empty($projectLinks)): ?>
+                            <div class="project-links">
+                                <?php foreach ($projectLinks as $link): ?>
+                                    <a href="<?php echo e($link['url']); ?>" target="_blank" rel="noopener noreferrer" class="project-link"><?php echo e($link['text']); ?></a>
+                                <?php endforeach; ?>
+                            </div>
                         <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
