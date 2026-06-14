@@ -194,6 +194,7 @@ return [
     ],
     'portfolio_title' => '项目与作品集',
     'portfolio' => [
+        ['icon' => '👥', 'title' => 'CRM Piloto — 多租户客户关系管理系统（Python & Oracle）', 'description' => '面向需要集中管理客户、线索、服务记录与销售漏斗的企业而开发的 CRM 试点项目。采用多租户架构，后端为部署于 VPS 的 Python/FastAPI，前端为 Vue.js 静态托管，数据库为 Oracle Database，通过 REST API 与 JWT 认证进行通信。', 'tech' => ['Python', 'FastAPI', 'Vue.js', 'Oracle'], 'links' => [['url' => 'https://purple-falcon-333770.hostingersite.com/', 'text' => '查看项目 →'], ['url' => 'https://api8.auctusconsultoria.com.br/docs', 'text' => 'API 文档 →']]],
         ['icon' => '📱', 'title' => 'Mundo de Historias — 儿童数字阅读平台（Flutter & Firebase）', 'description' => '面向儿童的完整故事分发生态系统，涵盖童话、寓言与插图故事。项目包含跨平台移动应用（historias_app）、管理后台（historias_admin）以及基于 Firebase 的无服务器 Cloud Functions。支持 RBAC 认证、数字内容 CRUD、嵌入式 PDF 阅读器、免费增值模式与集中式内容管理。', 'tech' => ['Flutter', 'Dart', 'Firebase', 'Node.js'], 'link_url' => 'https://github.com/Jefferson23br/historias_app', 'link_text' => '在 GitHub 查看 →'],
         ['icon' => '🌾', 'title' => '农业综合管理平台（Web 与 Mobile）', 'description' => '我构思并正在开发一个面向农业的完整 SaaS 平台，聚焦整合关键田间信息。目标是为生产者提供统一工具，用于土地管理、作物管理以及逐季产量历史追踪。', 'tech' => ['Node.js', 'React.js', 'Flutter', 'PostgreSQL']],
         ['icon' => '💰', 'title' => '里程报销 ERP', 'description' => '我在 4 天内从零开发出完整的全栈里程报销管理应用，将运营需求转化为稳健可用的 Web 系统。该方案已投入生产，后端部署于 VPS，前端已集成到网站中。', 'tech' => ['Node.js', 'PostgreSQL', 'JavaScript'], 'link_url' => 'https://www.auctusconsultoria.com.br/Reembolso-Km/frontend/Reembolso', 'link_text' => '查看项目 →'],
