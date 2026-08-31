@@ -29,6 +29,7 @@ return [
         ['title' => '高复杂度系统（SaaS 与 GovTech）', 'text' => '具备公共管理与销售系统的开发维护经验，使用 Docker 容器化，并在高负载环境下确保数据完整性。'],
         ['title' => '具备法律视角的软件工程', 'text' => '结合法律与会计背景构建软件逻辑，自动化税务与监管合规，并采用 Clean Architecture，确保代码像财务报表一样可审计。'],
         ['title' => '技术领导与基础设施', 'text' => '担任技术主管，管理部署周期、代码审查与查询优化，保障信息安全与低延迟。'],
+        ['title' => '高性能 TOTVS Fluig 开发与架构', 'text' => '在 TOTVS Fluig 平台上对复杂流程进行 BPMN 建模与自动化，构建响应式动态表单，开发自定义 Dataset，并在 WCM 与 ECM 中创建门户/小组件，使用 JavaScript、Java、HTML5、CSS3、Bootstrap 以及 REST/SOAP API。'],
     ],
     'about_closing' => '我相信技术应成为盈利能力的有力支撑。我的目标是把运营瓶颈转化为直观且安全的数字产品。',
     'github_title' => 'GitHub 与技术栈',
@@ -52,9 +53,28 @@ return [
     'experience_stack_label' => '技术栈:',
     'jobs' => [
         [
+            'company' => 'Premix Nutrição Animal',
+            'role' => '流程分析师',
+            'period' => '2026年8月 — 至今',
+            'location' => '',
+            'paragraphs' => [
+                '在农业综合企业与信息技术的交汇点开展战略与技术工作，聚焦动物营养领域的卓越表现。',
+                '负责领导公司运营流程的现代化、标准化与自动化。',
+            ],
+            'list_title' => '主要职责与交付成果：',
+            'list' => [
+                '流程管理与梳理：需求调研、工作流设计（As-Is / To-Be），并识别运营瓶颈以推动持续改进。',
+                '自动化与集成（TOTVS）：作为技术负责人实施并运维 Fluig 平台，确保与 ERP Protheus 全面集成，实现企业流程数字化。',
+                '运营治理：编写详细技术文档并制定标准作业程序（SOP），确保合规与日常流程标准化。',
+                '全栈开发：构建配套应用与解决方案以支持自动化，使用现代框架与语言，覆盖后端（Java、Python、Node.js 与 NestJS）和前端（HTML、React 与 Angular）。',
+            ],
+            'highlights' => [],
+            'stack' => 'TOTVS Fluig、ERP Protheus、Java、Python、Node.js、NestJS、HTML、React 与 Angular。',
+        ],
+        [
             'company' => 'Quatro Pontos Grafica',
             'role' => '行政分析师 | 财务管理、税务审计与流程自动化',
-            'period' => '2026年2月 — 至今',
+            'period' => '2026年2月 — 2026年7月',
             'location' => 'Ribeirao Preto, SP',
             'paragraphs' => [
                 '我在 Quatro Pontos Grafica 负责战略层面的财务与税务管理，重点关注准确性、合规性和运营绩效。我深入分析关键指标、现金流、财务可行性与盈利能力，确保决策稳健并与业务目标一致。',

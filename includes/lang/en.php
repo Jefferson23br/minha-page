@@ -41,6 +41,10 @@ return [
             'title' => 'Technical Leadership and Infrastructure',
             'text' => 'Worked as Technical Supervisor, managing deployment cycles, code review, and query optimization to ensure information security and low latency.',
         ],
+        [
+            'title' => 'High-Performance TOTVS Fluig Development and Architecture',
+            'text' => 'Modeling and automation of complex processes (BPMN) on the TOTVS Fluig platform, building responsive and dynamic forms, developing custom Datasets, and creating portals/widgets in WCM and ECM, using JavaScript, Java, HTML5, CSS3, Bootstrap, and REST/SOAP API consumption.',
+        ],
     ],
     'about_closing' => 'I believe technology should be profitability\'s right hand. My goal is to turn operational bottlenecks into intuitive and secure digital products.',
     'github_title' => 'GitHub & Technology Stack',
@@ -64,9 +68,28 @@ return [
     'experience_stack_label' => 'Stack:',
     'jobs' => [
         [
+            'company' => 'Premix Nutrição Animal',
+            'role' => 'Process Analyst',
+            'period' => 'August 2026 — Present',
+            'location' => '',
+            'paragraphs' => [
+                'Strategic and technical work at the intersection of agribusiness and information technology, with a focus on excellence in animal nutrition.',
+                'Responsible for leading the modernization, standardization, and automation of the company\'s operational workflows.',
+            ],
+            'list_title' => 'Main Responsibilities and Deliverables:',
+            'list' => [
+                'Process Management and Mapping: Requirements gathering, workflow design (As-Is / To-Be), and identification of operational bottlenecks to drive continuous improvement.',
+                'Automation and Integration (TOTVS): Technical lead for the implementation and support of the Fluig platform, ensuring full integration with the Protheus ERP to digitize company processes.',
+                'Operational Governance: Development of detailed technical documentation and Standard Operating Procedures (SOPs), ensuring compliance and standardization of routines.',
+                'Full-Stack Development: Building complementary applications and solutions to support automation, using modern frameworks and languages, covering Back-end (Java, Python, Node.js, and NestJS) and Front-end (HTML, React, and Angular).',
+            ],
+            'highlights' => [],
+            'stack' => 'TOTVS Fluig, Protheus ERP, Java, Python, Node.js, NestJS, HTML, React, and Angular.',
+        ],
+        [
             'company' => 'Quatro Pontos Grafica',
             'role' => 'Administrative Analyst | Financial Management, Tax Auditing & Process Automation',
-            'period' => 'February 2026 — Present',
+            'period' => 'February 2026 — July 2026',
             'location' => 'Ribeirao Preto, SP',
             'paragraphs' => [
                 'I work strategically at Quatro Pontos Grafica, leading the company\'s financial and tax management with focus on accuracy, compliance, and operational performance. I perform in-depth analysis of indicators, cash flow, financial feasibility, and profitability, supporting solid decisions aligned with business goals.',

@@ -29,6 +29,7 @@ return [
         ['title' => 'Sistemas de Alta Complejidad (SaaS & GovTech)', 'text' => 'Experiencia en el desarrollo y mantenimiento de soluciones para Gestion Publica y sistemas de ventas, aplicando Docker para contenedorizacion y garantizando integridad de datos en entornos de alta carga.'],
         ['title' => 'Ingenieria de Software con Vision Legal', 'text' => 'Aplico mi base juridica y contable para estructurar logicas de software que automatizan cumplimientos fiscales y regulatorios, usando Clean Architecture para que el codigo sea tan auditable como un balance contable.'],
         ['title' => 'Liderazgo Tecnico e Infraestructura', 'text' => 'Actuacion como Supervisor Tecnico, gestionando ciclos de despliegue, revision de codigo y optimizacion de consultas para garantizar seguridad de la informacion y baja latencia.'],
+        ['title' => 'Desarrollo y Arquitectura TOTVS Fluig de Alto Rendimiento', 'text' => 'Modelado y automatizacion de procesos complejos (BPMN) en la plataforma TOTVS Fluig, construccion de formularios responsivos y dinamicos, desarrollo de Datasets personalizados y creacion de portales/widgets en WCM y ECM, utilizando JavaScript, Java, HTML5, CSS3, Bootstrap y consumo de APIs REST/SOAP.'],
     ],
     'about_closing' => 'Creo que la tecnologia debe ser la mano derecha de la rentabilidad. Mi objetivo es transformar cuellos de botella operativos en productos digitales intuitivos y seguros.',
     'github_title' => 'GitHub y Stack Tecnologico',
@@ -52,9 +53,28 @@ return [
     'experience_stack_label' => 'Stack:',
     'jobs' => [
         [
+            'company' => 'Premix Nutrição Animal',
+            'role' => 'Analista de Procesos',
+            'period' => 'agosto de 2026 — Presente',
+            'location' => '',
+            'paragraphs' => [
+                'Actuacion estrategica y tecnica en la interseccion entre el agronegocio y la tecnologia de la informacion, con foco en excelencia en nutricion animal.',
+                'Responsable de liderar la modernizacion, estandarizacion y automatizacion de los flujos operativos de la compania.',
+            ],
+            'list_title' => 'Principales Responsabilidades y Entregas:',
+            'list' => [
+                'Gestion y Mapeo de Procesos: Levantamiento de requisitos, diseno de flujos de trabajo (As-Is / To-Be) e identificacion de cuellos de botella operativos para promover la mejora continua.',
+                'Automatizacion e Integracion (TOTVS): Responsable tecnico de la implementacion y sustentacion de la plataforma Fluig, garantizando integracion total con el ERP Protheus para la digitalizacion de los procesos de la empresa.',
+                'Gobernanza Operativa: Elaboracion de documentacion tecnica detallada y creacion de Procedimientos Operativos Estandar (POEs), asegurando el cumplimiento y la estandarizacion de las rutinas.',
+                'Desarrollo Full-Stack: Construccion de aplicaciones y soluciones complementarias para apoyar la automatizacion, utilizando frameworks y lenguajes modernos, incluyendo Back-end (Java, Python, Node.js y NestJS) y Front-end (HTML, React y Angular).',
+            ],
+            'highlights' => [],
+            'stack' => 'TOTVS Fluig, ERP Protheus, Java, Python, Node.js, NestJS, HTML, React y Angular.',
+        ],
+        [
             'company' => 'Quatro Pontos Grafica',
             'role' => 'Analista Administrativo | Gestion Financiera, Auditoria Tributaria y Automatizacion de Procesos',
-            'period' => 'febrero de 2026 — Presente',
+            'period' => 'febrero de 2026 — Julio de 2026',
             'location' => 'Ribeirao Preto, SP',
             'paragraphs' => [
                 'Actuo estrategicamente en Quatro Pontos Grafica, liderando la gestion financiera y tributaria de la empresa con foco en precision, cumplimiento y desempeno operativo. Realizo analisis profundos de indicadores, flujo de caja, viabilidad financiera y rentabilidad, garantizando decisiones solidas alineadas a los objetivos del negocio.',

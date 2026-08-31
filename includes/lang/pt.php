@@ -41,6 +41,10 @@ return [
             'title' => 'Liderança Técnica e Infraestrutura',
             'text' => 'Atuação como Supervisor Técnico, gerindo ciclos de deploy, revisão de código (Code Review) e otimização de consultas para garantir segurança da informação e baixa latência.',
         ],
+        [
+            'title' => 'Desenvolvimento e Arquitetura TOTVS Fluig de Alta Performance',
+            'text' => 'Modelagem e automação de processos complexos (BPMN) na plataforma TOTVS Fluig, construção de formulários responsivos e dinâmicos, desenvolvimento de Datasets customizados e criação de portais/widgets em WCM e ECM, utilizando JavaScript, Java, HTML5, CSS3, Bootstrap e consumo de APIs REST/SOAP.',
+        ],
     ],
     'about_closing' => 'Acredito que a tecnologia deve ser o braço direito da rentabilidade. Meu objetivo é transformar gargalos operacionais em produtos digitais intuitivos e seguros.',
     'github_title' => 'GitHub & Stack Tecnológica',
@@ -64,9 +68,28 @@ return [
     'experience_stack_label' => 'Stack:',
     'jobs' => [
         [
+            'company' => 'Premix Nutrição Animal',
+            'role' => 'Analista de Processos',
+            'period' => 'agosto de 2026 — Presente',
+            'location' => '',
+            'paragraphs' => [
+                'Atuação estratégica e técnica na intersecção entre o agronegócio e a tecnologia da informação, com foco em excelência em nutrição animal.',
+                'Responsável por liderar a modernização, padronização e automação dos fluxos operacionais da companhia.',
+            ],
+            'list_title' => 'Principais Responsabilidades e Entregas:',
+            'list' => [
+                'Gestão e Mapeamento de Processos: Levantamento de requisitos, desenho de fluxos de trabalho (As-Is / To-Be) e identificação de gargalos operacionais para promover a melhoria contínua.',
+                'Automação e Integração (TOTVS): Responsável técnico pela implementação e sustentação da plataforma Fluig, garantindo total integração com o ERP Protheus para a digitalização dos processos da empresa.',
+                'Governança Operacional: Elaboração de documentações técnicas detalhadas e criação de Procedimentos Operacionais Padrão (POPs), assegurando o compliance e a padronização das rotinas.',
+                'Desenvolvimento Full-Stack: Construção de aplicações e soluções complementares para apoiar a automação, utilizando frameworks e linguagens modernas, englobando Back-end (Java, Python, Node.js e NestJS) e Front-end (HTML, React e Angular).',
+            ],
+            'highlights' => [],
+            'stack' => 'TOTVS Fluig, ERP Protheus, Java, Python, Node.js, NestJS, HTML, React e Angular.',
+        ],
+        [
             'company' => 'Quatro Pontos Grafica',
             'role' => 'Analista Administrativo | Gestao Financeira, Auditoria Tributaria & Automacao de Processos',
-            'period' => 'fevereiro de 2026 — Presente',
+            'period' => 'fevereiro de 2026 — Julho de 2026',
             'location' => 'Ribeirao Preto, SP',
             'paragraphs' => [
                 'Atuo estrategicamente na Quatro Pontos Grafica, conduzindo a gestao financeira e tributaria da empresa com foco em precisao, conformidade e desempenho operacional. Realizo analises profundas de indicadores, fluxo de caixa, viabilidade financeira e rentabilidade, garantindo tomadas de decisao solidas e alinhadas aos objetivos do negocio.',

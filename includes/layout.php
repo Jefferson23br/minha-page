@@ -155,6 +155,7 @@ if (!function_exists('e')) {
                     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
                     <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
                     <img src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress" />
+                    <img src="https://img.shields.io/badge/TOTVS_Fluig-363636?style=for-the-badge&logo=totvs&logoColor=white" alt="TOTVS Fluig" />
                     <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
                     <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
                     <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
@@ -202,7 +203,9 @@ if (!function_exists('e')) {
                             <h3><?php echo e($job['company']); ?></h3>
                             <p class="job-role"><?php echo e($job['role']); ?></p>
                             <p class="period"><?php echo e($job['period']); ?></p>
-                            <p class="job-location"><?php echo e($job['location']); ?></p>
+                            <?php if (!empty($job['location'])): ?>
+                                <p class="job-location"><?php echo e($job['location']); ?></p>
+                            <?php endif; ?>
                             <?php foreach ($job['paragraphs'] as $paragraph): ?>
                                 <p><?php echo e($paragraph); ?></p>
                             <?php endforeach; ?>
